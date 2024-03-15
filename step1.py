@@ -1,3 +1,27 @@
+###########################################################
+#
+#  step1.py
+#
+#  Part of the task to reset and resubmit McM requests.
+#
+#  author: Samadhan Kamble (samadhan.kamble@cern.ch)
+#
+#  The step 1 performs: 
+#   1) identify the chained request
+#   2) un-check the flag in the chained request
+#   3) rewind the chained request to root
+#   4) reset and delete all daughter requests (except root)
+#   5) reserve the same chain again
+#
+#  The step 2 (step2.py) performs:
+#   6) check back the flag in chained request
+#   7) soft reset the root request
+#   8) resubmit the root request
+#
+#
+############################################################
+
+
 import sys
 import argparse
 sys.path.append("/afs/cern.ch/cms/PPD/PdmV/tools/McM/")
