@@ -1,12 +1,10 @@
-###########################################################
+#######################################################################
 #
-#  step1.py
-#
-#  Part of the task to reset and resubmit McM requests.
+#  Part of the task to reset and resubmit McM chained_requests.
 #
 #  author: Samadhan Kamble (samadhan.kamble@cern.ch)
 #
-#  The step 1 performs: 
+#  The step 1 (step1.py) performs: 
 #   1) identify the chained request
 #   2) un-check the flag in the chained request
 #   3) rewind the chained request to root
@@ -15,11 +13,12 @@
 #
 #  The step 2 (step2.py) performs:
 #   6) check back the flag in chained request
-#   7) soft reset the root request
-#   8) resubmit the root request
+#   
+#  Finally one can soft reset and resubmit corresponding root requests
 #
+#  It'd be better if all the steps could be done in single script, but there is some non-trivial issue. Can try! It does the job nonetheless.
 #
-############################################################
+#########################################################################
 
 
 import sys
