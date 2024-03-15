@@ -1,10 +1,7 @@
 # McM Scripts
-Repository for using McM scripts and example scripts
+Repository for using McM scripts and example scripts. 
 
 ### Basic info
-McM is going to be serviced from a new domain: `cms-pdmv-prod.web.cern.ch`. The exact date of migration
-is going to be communicated in the near future via CMS Talk.
-
 * Link to McM: https://cms-pdmv-prod.web.cern.ch/mcm/
 * McM Rest API: https://cms-pdmv-prod.web.cern.ch/mcm/restapi
 * Public APIs do not require SSO credentials. Index of public API: https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/
