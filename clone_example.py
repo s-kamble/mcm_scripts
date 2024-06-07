@@ -12,17 +12,19 @@ modifications = {'extension': 1,
                  'total_events': 101,
                  'member_of_campaign': 'Summer12'}
 
+mod = {'Tags': 'test'}
+
 request_prepid_to_clone = "B2G-Fall13-00001"
 
 # Get a request object which we want to clone
 request = mcm.get('requests', request_prepid_to_clone)
 
 # Make predefined modifications
-for key in modifications:
-    request[key] = modifications[key]
+for key in mod:
+    request[key] = mod[key]
 
-clone_answer = mcm.clone_request(request)
-if clone_answer.get('results'):
-    print('Clone PrepID: %s' % (clone_answer['prepid']))
-else:
-    print('Something went wrong while cloning a request. %s' % (dumps(clone_answer)))
+#clone_answer = mcm.clone_request(request)
+#if clone_answer.get('results'):
+#    print('Clone PrepID: %s' % (clone_answer['prepid']))
+#else:
+#    print('Something went wrong while cloning a request. %s' % (dumps(clone_answer)))

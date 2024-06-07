@@ -74,9 +74,9 @@ for chained_request in chained_requests:
 #    mcm.reset(steps[-1])
 #    mcm.delete("requests", steps[-1])
 
-    print("\tReserving the same chain again..")
+#    print("\tReserving the same chain again..")
 
-    mcm.reserve(chained_request)
+#    mcm.reserve(chained_request)
 #    while mcm.reserve(chained_request):	
 #        pass
 

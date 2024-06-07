@@ -6,8 +6,8 @@ mcm = McM(dev=True)
 
 # Example to edit a request parameter(-s) and save it back in McM
 # request_prepid_to_update = 'HIG-Summer12-01257' # Doesn't exist
-request_prepid_to_update = 'HIG-Summer12-02358'
-field_to_update = 'time_event'
+request_prepid_to_update = 'HIG-Summer12-02350'
+field_to_update = 'tags'
 
 # get a the dictionnary of a request
 request = mcm.get('requests', request_prepid_to_update)
@@ -22,7 +22,7 @@ else:
 
     # Modify what we want
     # time_event is a list for each sequence step
-    request[field_to_update] = [10]
+    request[field_to_update] = ['test2']
 
     # Push it back to McM
     update_response = mcm.update('requests', request)
