@@ -1,3 +1,8 @@
+####################################################################
+# Operate MccM tickets: Inspect and inject requests in McM
+# Usage: python3 operate_tickets.py --tickets {comma separated list}
+####################################################################
+
 import sys
 import argparse
 sys.path.append("/afs/cern.ch/cms/PPD/PdmV/tools/McM/")
@@ -54,7 +59,7 @@ for ticket in approved_tickets:
 
     # reserve and approve chained requests
     chained_requests = mcm.chained_requests_from_ticket(ticket)
-    print("--> resulting chained requests:")
+    print("--> resulting chained requests:", chained_requests)
     root_requests = []
     for chained_request in chained_requests:
         print("\t", chained_request)
